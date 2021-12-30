@@ -1,0 +1,81 @@
+<!-- <form>
+  <div class="form-row">
+    <div class="form-group col-3">
+      <label for="nam-select">Năm</label>
+      <select id="nam-select" class="form-control nam-select"> </select>
+    </div>
+    <div class="form-group col-3">
+      <label for="thang-select">Tháng</label>
+      <select id="thang-select" class="form-control thang-select"> </select>
+    </div>
+    <div class="form-group col-3">
+      <label for="matinh-select">Tỉnh</label>
+      <select id="matinh-select" class="form-control matinh-select-user"> </select>
+    </div>
+
+    <div class="form-group col-3">
+      <label for="loaibc-select">Loại Báo Cáo</label>
+      <select id="loaibc-select" class="form-control">
+        <option value="3">Trả trước + Trả sau</option>
+        <option value="1">Trả trước</option>
+        <option value="2">Trả sau</option>
+        <option value="4">Trả trước + Trả sau (Theo loại dịch vụ)</option>
+        <option value="5">Trả trước (Theo loại dịch vụ)</option>
+        <option value="6">Trả sau (Theo loại dịch vụ)</option>
+      </select>
+    </div>
+  </div> -->
+
+  <p class="col-12 rpNotes">
+    <b><u>Ghi chú:</u></b>
+    <br />
+    - Độ trễ dữ liệu: n-1<br />
+    - Nguồn dữ liệu: Tổng công ty<br />
+    - Nhân viên cung cấp: Lê Thanh Long - P.DVKT
+  </p>
+
+  <button type="button" id= "status" class="btn btn-primary" onclick="">Trạng thái</button>
+</form>
+
+<div class="table-responsive py-3" id="report"> <p id = "head"></p></div>
+
+
+<!-- Chatbot Voice -->
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.min.css'>
+
+<div class="floating-chat">
+    <i class="fa fa-comments" aria-hidden="true"></i>
+</div>
+
+  <section class="avenue-messenger" id="myForm">
+    <div class="menu">
+      <div class="items"></div>
+       <div class="button"> <button onclick="CloseGUI()" style="font-size: 50%;">&#10005;</button><br></div>
+     </div>
+     <div class="agent-face">
+       <div class="half">
+        <img class="agent circle" src="/static/assets/img/images.png" alt="BOT"></div>
+     </div>
+   <div class="chat">
+     <div class="chat-title">
+       <h1>BOT</h1>
+       <h2>BÁO CÁO</h2> 
+     </div>
+     <div class="messages">
+       <div class="messages-content"></div>
+     </div>
+     <div class="message-box">
+       <textarea id="typing_text" type="text" class="message-input" placeholder="Type message..."></textarea>
+       <button type="submit" class="message-submit" id ="sendt">Send</button>
+       <button class="messagec" id='btnTalk' onclick="voice()" ><img src="/static/assets/img/mic.png" style="right: 10px;" width="20px" height="20px"></button>
+     </div>
+   </div>
+     </div>  
+
+
+
+   </div>
+   </section>
+
+     
